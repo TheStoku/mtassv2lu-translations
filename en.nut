@@ -14,7 +14,7 @@ command_help_commands_message_1_en 					<- "Help-commands:";
 command_help_commands_message_2_en 					<- "Type '/logout' to log out.";
 command_help_commands_message_3_en 					<- "Type '/login <password>' to log in.";
 command_help_commands_message_4_en 					<- "Type '/register <password>' Register command to register a nick.";
-command_help_commands_message_5_en 					<- "!stats, !loc, !hp, !car, !money, !deposit, !withdraw, !manhunt, !achievements, !buy, !mycar, !gps, !give, !cmd";
+command_help_commands_message_5_en 					<- "!stats, !loc, !hp, !car, !money, !deposit, !withdraw, !manhunt, !achievements, !buy, !mycar, !gps, !give, !cmd, !time";
 command_help_bank_message_1_en 						<- "Help-Bank:";
 command_help_bank_message_2_en 						<- "You can use a Bank to store your money.";
 command_help_bank_message_3_en 						<- "The money stored in the bank are safe and can't be lost (eg. after dying).";
@@ -76,9 +76,9 @@ command_gps_message_4_en 							<- "GPS has been set to %s.";
 command_car_buy_1_en 								<- "You must be at Car Dealer to buy vehicle. Try '!gps'.";
 command_mycar_message_en 							<- "Car commands (only for vehicle owners): !getcar";
 command_getcar_message_1_en 						<- "Type: '!getcar <id>'";
-command_getcar_message_1_en							<- "Car ID must be numeric.";
-command_getcar_message_1_en 						<- "You must be spawned to use this command.";
-command_getcar_message_1_en			 				<- "Cannot teleport vehicles while mission is running.";
+command_getcar_message_2_en							<- "Car ID must be numeric.";
+command_getcar_message_3_en 						<- "You must be spawned to use this command.";
+command_getcar_message_4_en			 				<- "Cannot teleport vehicles while mission is running.";
 command_stats_message_1_en 							<- "%s Game Kills: %i Deaths: %i Overall Kills: %i Deaths: %i Ratio: %i \nMissions: Manhunt: %i Van Heist: %i GTA: %i Speed: %i";
 command_loc_message_1_en 							<- "%s is in '%s'.";
 command_hp_message_1_en 							<- "%s health: %i%% [%s].";
@@ -96,6 +96,7 @@ message_login_attempts_reached_en 					<- "Login attempts limit reached. Banning
 message_login_elready_logged_en 					<- "You are already logged in.";
 message_login_incorrect_password_en 				<- "Incorrect password for '%s'. (%i try(s) left.)";
 message_login_success_en 							<- "'%s' logged in as a member.";
+message_logout_success_en							<- "You have been logged out successfully!";
 message_register_success_en							<- "'%s'. has been registered as a member.";
 message_register_info_1_en 							<- "Account info - Name: %s, IP: %s.";
 message_register_info_2_en 							<- "Type '/login <password>' to login, '/set <password> <value>' to edit account.";
@@ -103,6 +104,8 @@ message_register_error_en 							<- "Error while registering account. Please con
 message_spawned_en 									<- "%s spawned as %s";
 message_wasted_en 									<- "WASTED!";
 message_killed_himself_en 							<- "%s killed himself.";
+message_drowned_en									<- "%s died (fall).";
+message_fall_en										<- "%s drowned.";
 message_kill_en 									<- "%s killed %s (%s).";
 message_join_player_en								<- "Connected to GTA3:MTA server.";
 message_happy_hours_en								<- "Happy hours bonus (x%i) is active!";
@@ -162,6 +165,7 @@ mission_van_heist_return_gang_en					<- "~r~Bomb timer set. Get away from the ca
 mission_gta_bring_car_home_en 						<- "~h~Bring the car ~b~home~h~.";
 mission_gta_delivered_car_en 						<- "~h~Your gang delivered a rival gang car.";
 mission_gta_steal_message_en 						<- "~h~Steal a ~y~car ~h~from a rival gangleader!";
+mission_tdm_win_en 									<- "~h~%s team wins team deathmatch!";
 
 // Businesses
 message_business_buy_already_owned_en 				<- "You are already owning this business.";
